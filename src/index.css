@@ -28,6 +28,7 @@ h2 {
   margin: 20px auto 0;
 
   font-size: 2.15em;
+  color: #8d33ff;
 }
 
 h2:not(.product__overview h2) {
@@ -42,7 +43,7 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
 
-  background-color: var(--clr-bunker);
+  background-color: black;
 }
 
 .nav__brand {
@@ -63,7 +64,7 @@ nav {
 }
 
 .nav__links {
-  background-color: var(--clr-ebony-clay);
+  background-color: #8d33ff;
   grid-column: 1 / span 3;
 
   padding: 10px;
@@ -92,24 +93,30 @@ nav {
   padding: 10px;
   border-radius: 6px;
   min-width: 50%;
+  text-align: center;
+  background-color: #8d33ff;
+}
+.nav__search::placeholder {
+  font-weight: bold;   /* Makes the placeholder bold */
+  font-size: 18px; 
+  color: white;  
+  /* Increase the font size */
 }
 
-.nav__search:hover {
-  outline: 1px solid var(--clr-orange);
-}
+
 
 .nav__connect {
   width: 150px;
   height: 40px;
   margin: 0 auto;
 
-  background-color: var(--clr-orange);
-  color: var(--clr-black);
+  background-color: blueviolet;
+  color: white;
 
   border: none;
   border-radius: 4px;
 
-  font-family: "Lalezar";
+  
   font-size: 1.25em;
   font-weight: 600;
 
@@ -118,7 +125,7 @@ nav {
 }
 
 .nav__connect:hover {
-  background-color: var(--clr-orange-dark);
+  background-color: black;
 }
 
 /* ------------------------------------------------------ */
@@ -140,6 +147,7 @@ nav {
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   margin-top: 20px;
+  
 }
 
 .card {
@@ -150,12 +158,14 @@ nav {
 
   cursor: pointer;
   position: relative;
+  
 
   transition: all 250ms ease;
 }
 
 .card:hover {
   box-shadow: 0 0 5px var(--clr-grey);
+  
 }
 
 .card__image {
@@ -187,7 +197,7 @@ nav {
 }
 
 .card__info .rating {
-  color: yellow;
+  color: #bb33ff;
   margin: 5px 0;
 }
 
@@ -204,7 +214,7 @@ nav {
 .product {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #8d33ff;
 
   position: fixed;
   top: 50%;
@@ -227,6 +237,7 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  color: #8d33ff;;
 
   background: var(--clr-white);
 }
@@ -234,6 +245,8 @@ nav {
 .product__image {
   max-width: 500px;
   margin: 20px auto;
+  border-color: #8d33ff;
+  border-width: 2px;
 }
 
 .product__image img {
@@ -292,8 +305,8 @@ nav {
   height: 40px;
   margin: 20px 0;
 
-  background-color: var(--clr-orange);
-  color: var(--clr-black);
+  background-color:#8d33ff;;
+  color: white;
 
   border: none;
   border-radius: 24px;
@@ -307,7 +320,7 @@ nav {
 }
 
 .product__buy:hover {
-  background-color: var(--clr-orange-dark);
+  background-color: black;
 }
 
 .product__bought {
